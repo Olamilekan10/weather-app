@@ -52,6 +52,7 @@ search.addEventListener('click', () => {
 
 
         temperature.innerHTML = `${}`;
+        temperature.innerHTML = `${}`;
 
     });
 
