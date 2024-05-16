@@ -6,6 +6,6 @@ const weatherDetails = document.querySelector('.weather-details');
 
 search.addEventListener('click', () => {
 
-    const APIKey = ''
+    const APIKey = 'ea837899c3e78816fa642dd545ce38ff';
 
 });
