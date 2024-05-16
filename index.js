@@ -24,10 +24,10 @@ search.addEventListener('click', () => {
         }
 
 
-        // container.style.height = '400px';
-        // weatherBox.classList.remove('active');
-        // weatherDetails.classList.remove('active');
-        // error404.classList.add('active');
+        container.style.height = '555px';
+        weatherBox.classList.add('active');
+        weatherDetails.classList.add('active');
+        error404.classList.remove('active');
 
 
         const image = document.querySelector('.weather-box img');
