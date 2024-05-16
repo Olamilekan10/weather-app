@@ -12,7 +12,7 @@ search.addEventListener('click', () => {
     if (city == '') 
         return;
     
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}').then((response) => response.json()).then(json => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`).then((response) => response.json()).then(json => {
 
         const image = document.querySelector('.weather-box img');
         const temperature = document.querySelector('.weather-box .temperature');
@@ -23,24 +23,31 @@ search.addEventListener('click', () => {
 
         switch (json.weather[0].main) {
             case 'Clear':
-                img.src = 'img/clear.png';
+                image.src = 'img/clear.png';
                 break;
 
             case 'Rain':
-                img.src = 'img/rain.png';
+                image.src = 'img/rain.png';
                 break;
 
             case 'Snow':
-                img.src = 'img/snow.png';
-                break;
-                break;
+                image.src = 'img/snow.png';
+                break;      
 
             case 'Clouds':
-                img.src = 'img/cloud2.png';
+                image.src = 'img/cloud2.png';
+                break;
+
+            case 'Mist':
+                image.src = 'img/mist.png';
+                break;
+
+            case 'Haze':
+                image.src = 'img/haze.png';
                 break;
         
             default:
-                break;
+                image.src = 'img/cloud1.png';
         }
 
     });
