@@ -83,7 +83,8 @@ body {
 }
 
 .weather-box,
-.weather-details {
+.weather-details,
+.not-found {
     visibility: hidden;
 }
 
@@ -164,4 +165,10 @@ body {
 
 .not-found img {
     width: 65%;
+}
+
+.not-found p {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
 }
