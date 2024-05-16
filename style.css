@@ -20,13 +20,14 @@ body {
 .container {
     position: relative;
     width: 400px;
-    height: 555px;
+    height: 100px;
     background: rgba(255, 255, 255, .1);
     backdrop-filter: blur(30px);
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 16px;
     padding: 20px;
     color: #fff;
+    transition: height .6s ease;
 }
 
 .search-box {
@@ -92,6 +93,17 @@ body {
 .weather-details.active,
 .not-found.active {
     visibility: visible;
+}
+
+.weather-box .box,
+.not-found .box {
+    transform: translateY(-100%);
+}
+
+.weather-box.active .box,
+.not-found.active .box {
+    transform: translateY(0%);
+    transition: ;
 }
 
 .weather-box img {
