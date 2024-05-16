@@ -103,7 +103,8 @@ body {
 .weather-box.active .box,
 .not-found.active .box {
     transform: translateY(0%);
-    transition: ;
+    transition: transform 1s ease;
+    transition-delay: .6s;
 }
 
 .weather-box img {
