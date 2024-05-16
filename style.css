@@ -152,3 +152,16 @@ body {
     font-size: 14px;
     font-weight: 500;
 }
+
+.not-found {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.not-found img {
+    width: 65%;
+}
