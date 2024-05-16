@@ -50,6 +50,9 @@ search.addEventListener('click', () => {
                 image.src = 'img/cloud1.png';
         }
 
+
+        temperature.innerHTML = `${}`;
+
     });
 
 });
