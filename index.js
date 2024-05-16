@@ -52,7 +52,9 @@ search.addEventListener('click', () => {
 
 
         temperature.innerHTML = `${}`;
-        temperature.innerHTML = `${}`;
+        description.innerHTML = `${}`;
+        humidity.innerHTML = `${}`;
+        wind.innerHTML = `${}`;
 
     });
 
