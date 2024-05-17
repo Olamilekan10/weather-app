@@ -111,6 +111,28 @@ search.addEventListener('click', () => {
 
             const cloneInfoWeather = document.querySelectorAll('.info-weather.active-clone');
             const totalCloneInfoWeather = cloneInfoWeather.length;
+            const cloneInfoWeatherFirst = cloneInfoWeather[0];
+
+        
+            const cloneInfoHumidity = document.querySelectorAll('.info-humidity.active-clone');
+            const cloneInfoHumidityFirst = cloneInfoHumidity[0];
+
+        
+            const cloneInfoWind = document.querySelectorAll('.info-wind.active-clone');
+            const cloneInfoWindFirst = cloneInfoWind[0];
+
+            if (totalCloneInfoWeather > 0) {
+                cloneInfoWeatherFirst.classList.remove('active-clone');
+                cloneInfoHumidityFirst.classList.remove('active-clone');
+                cloneInfoWindFirst.classList.remove('active-clone');
+
+
+                setTimeout(() => {
+                    cloneInfoWeatherFirst.remove();
+                    cloneInfoHumidityFirst.remove();
+                    cloneInfoWindFirst.remove();
+                }, 2200);
+            }
 
         }
 
