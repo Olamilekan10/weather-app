@@ -41,6 +41,7 @@ search.addEventListener('click', () => {
             cityHide.textContent = city;
             
             container.style.height = '555px';
+            container.classList.add('active');
             weatherBox.classList.add('active');
             weatherDetails.classList.add('active');
             error404.classList.remove('active');
@@ -76,7 +77,6 @@ search.addEventListener('click', () => {
             }
 
 
-            https://api.edamam.com/api/recipes/v2
             temperature.innerHTML = `${parseInt(json.main.temp)}<span>&#176;C</span>`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}`;
