@@ -76,6 +76,7 @@ search.addEventListener('click', () => {
             }
 
 
+            https://api.edamam.com/api/recipes/v2
             temperature.innerHTML = `${parseInt(json.main.temp)}<span>&#176;C</span>`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}`;
