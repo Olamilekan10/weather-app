@@ -236,7 +236,7 @@ body {
     transition-delay: 0s, 2s;
 }
 
-/* .weather-box:not(.active) #clone-info-weather .weather {
+.weather-box:not(.active) #clone-info-weather .weather {
     opacity: 0;
     transition-delay: 0s;
 }
@@ -254,4 +254,4 @@ body {
 .active-clone#clone-info-humidity span,
 .active-clone#clone-info-wind span {
     transform: translateY(0%);
-} */
+}
