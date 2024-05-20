@@ -224,7 +224,7 @@ body {
 }
 
 #clone-info-weather,
-#clone-info-humidty,
+#clone-info-humidity,
 #clone-info-wind {
     position: absolute;
     transform: translateY(-100%);
@@ -236,9 +236,9 @@ body {
     transition-delay: 0s, 2s;
 }
 
-.weather-box:not(:active) #clone-info-weather .weather {
+/* .weather-box:not(.active) #clone-info-weather .weather {
     opacity: 0;
-    transition: 0;
+    transition-delay: 0s;
 }
 
 .active-clone#clone-info-weather .weather {
@@ -254,4 +254,4 @@ body {
 .active-clone#clone-info-humidity span,
 .active-clone#clone-info-wind span {
     transform: translateY(0%);
-}
+} */
