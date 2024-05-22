@@ -158,14 +158,20 @@ body {
     display: flex;
     align-items: center;
     width: 50%;
-    transform: translateY(100%);
+    transform: translateY(-100%);
 }
 
 .weather-details .humidity .info-humidity,
 .weather-details .wind .info-wind {
+    transform: translateY(0%);
+    overflow: hidden;
+}
+
+.weather-details .humidity .info-humidity {
     transform: translateY(-100%);
     overflow: hidden;
 }
+
 
 .weather-details.active .humidity,
 .weather-details.active .wind {
